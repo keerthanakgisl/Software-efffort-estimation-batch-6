@@ -1,0 +1,18 @@
+30-01-2017:Module 1 completed.
+Coding snippet:
+f = open('input.txt', 'r')	
+memo=[] 
+for i in range (8):
+    x=int(input("enter no. \n")) 
+    memo.insert(i,x)
+    i+=1
+count=0
+for line in f:
+	count= count +1
+	if count < 6:
+		for j in memo:
+			k=memo[j]
+			x = line.split(',')[k]
+			print x
+		
+	
